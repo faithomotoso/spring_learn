@@ -1,4 +1,4 @@
-package com.exmp.springdemo;
+package com.exmp.springdemo.logging;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
