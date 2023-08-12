@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:property-placeholder location="file:src/main/java/com/exmp/springdemo/sport.properties"/>
+
     <bean id="loggerConfig" class="com.exmp.springdemo.logging.LoggerConfig" init-method="initLogger">
         <property name="rootLoggerLevel" value="FINE"/>
         <property name="printedLoggerLevel" value="FINE"/>
@@ -23,8 +25,8 @@
 
     <bean id="myCricketCoach" class="com.exmp.springdemo.coach.CricketCoach">
         <property name="fortuneService" ref="fortuneService"/>
-        <property name="emailAddress" value="m@mail.com"/>
-        <property name="teamName" value="Crickyy Boiz"/>
+        <property name="emailAddress" value="${cricket.email}"/>
+        <property name="teamName" value="${cricket.team}"/>
     </bean>
 
     <!-- define the dependency -->
