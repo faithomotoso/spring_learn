@@ -10,6 +10,8 @@
     <!--    Enable component scanning -->
     <context:component-scan base-package="com.exmp.springdemoannotations" />
 
+    <context:property-placeholder location="file:src/main/java/com/exmp/springdemoannotations/sport.properties"/>
+
 </beans>
 
 
