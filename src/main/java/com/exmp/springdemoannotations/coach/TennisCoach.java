@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach {
-    private FortuneService fortuneService;
+    private final FortuneService fortuneService;
 
     @Value("${tennis.team}")
     private String teamName;
     @Autowired
-    public TennisCoach(@Qualifier("randomFortuneService") FortuneService fortuneService) {
+    public TennisCoach(@Qualifier("crinnyFortuneService") FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
