@@ -2,6 +2,7 @@ package com.exmp.springdemoannotations.fortune;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -15,10 +16,7 @@ public class CrinnyFortuneService implements FortuneService {
 
     private final Random random = new Random();
 
-    CrinnyFortuneService() throws IOException{
-        loadFortunesFromFile();
-    }
-
+    @PostConstruct
     private void loadFortunesFromFile() throws IOException {
         FileReader fileReader = new FileReader("src/main/java/com/exmp/springdemoannotations/fortunes.txt");
 
@@ -28,6 +26,9 @@ public class CrinnyFortuneService implements FortuneService {
         while ((line = bufferedReader.readLine()) != null) {
             fortunes.add(line);
         }
+
+        bufferedReader.close();
+        fileReader.close();
 
         System.out.println("Loaded fortunes.txt");
     }
