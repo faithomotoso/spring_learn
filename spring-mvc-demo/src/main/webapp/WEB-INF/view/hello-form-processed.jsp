@@ -12,5 +12,7 @@
 
 <p>Student name: ${param.studentName}</p>
 
+<p>Message is: ${message}</p>
+
 </body>
 </html>
