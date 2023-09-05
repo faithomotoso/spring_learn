@@ -3,6 +3,7 @@ package com.exmp.springmvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -24,6 +25,19 @@ public class HelloFormController {
         String nameUpper = request.getParameter("studentName").toUpperCase();
 
         model.addAttribute("message", nameUpper);
+
+        return "hello-form-processed";
+    }
+
+    @RequestMapping("/processFormV3")
+    public String processFormV3(
+            @RequestParam("studentName") String theName,
+            Model model) {
+        theName = theName.toUpperCase();
+
+        String message = "Ahoy! " + theName;
+
+        model.addAttribute("message", message);
 
         return "hello-form-processed";
     }
