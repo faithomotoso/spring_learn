@@ -13,6 +13,6 @@
 <body>
 <h2>Hi there!</h2>
 
-<a href="show-form">Link to form</a>
+<a href="hello/show-form">Link to form</a>
 </body>
 </html>
