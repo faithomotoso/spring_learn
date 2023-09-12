@@ -14,5 +14,9 @@
 <h2>Hi there!</h2>
 
 <a href="hello/show-form">Link to form</a>
+
+<br/>
+
+<a href="student/showForm">Student form</a>
 </body>
 </html>
