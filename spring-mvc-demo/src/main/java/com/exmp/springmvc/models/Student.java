@@ -3,6 +3,7 @@ package com.exmp.springmvc.models;
 public class Student {
     private String firstName;
     private String lastName;
+    private String country;
 
     public Student() {
 
@@ -24,4 +25,11 @@ public class Student {
         return lastName;
     }
 
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getCountry() {
+        return country;
+    }
 }

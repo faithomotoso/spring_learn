@@ -25,6 +25,17 @@
 
     <br/>
 
+    <form:select path="country">
+
+        <form:option value="Canada" label="Canada"/>
+        <form:option value="Nigeria" label="Nigeria"/>
+        <form:option value="Australia" label="Australia"/>
+        <form:option value="Switzaland" label="Switzaland"/>
+
+    </form:select>
+
+    <br />
+
     <input type="submit" value="Submit" />
 
 </form:form>
