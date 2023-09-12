@@ -8,6 +8,7 @@ public class Student {
     private String lastName;
     private String country;
     private String favoriteDessert;
+    private String[] genres;
     private Map<String, String> countryOptions;
 
     public Student() {
@@ -52,5 +53,13 @@ public class Student {
 
     public String getFavoriteDessert() {
         return favoriteDessert;
+    }
+
+    public void setGenres(String[] genres) {
+        this.genres = genres;
+    }
+
+    public String[] getGenres() {
+        return genres;
     }
 }

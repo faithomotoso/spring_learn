@@ -33,12 +33,20 @@
 
     <br />
 
+    Favorite Dessert:
     Oreo <form:radiobutton path="favoriteDessert" value="Oreo" />
     Banana Bread <form:radiobutton path="favoriteDessert" value="Banana Bread" />
     Cinnamon Rolls <form:radiobutton path="favoriteDessert" value="Cinnamon Rolls" />
 
     <br />
 
+    Music Genres:
+    Pop <form:checkbox path="genres" value="Pop" />
+    Rock <form:checkbox path="genres" value="Rock" />
+    Classical <form:checkbox path="genres" value="Classical" />
+    Drum n Bass <form:checkbox path="genres" value="Drum n Bass" />
+
+    <br />
     <input type="submit" value="Submit" />
 
 </form:form>
