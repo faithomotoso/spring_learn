@@ -33,6 +33,12 @@
 
     <br />
 
+    Oreo <form:radiobutton path="favoriteDessert" value="Oreo" />
+    Banana Bread <form:radiobutton path="favoriteDessert" value="Banana Bread" />
+    Cinnamon Rolls <form:radiobutton path="favoriteDessert" value="Cinnamon Rolls" />
+
+    <br />
+
     <input type="submit" value="Submit" />
 
 </form:form>
